@@ -8,6 +8,7 @@ let shoppingList = require("./models/shoppingList");
 
 shoppingListController.setup(app, shoppingList);
 
+//test comment to run the CI/CD 
 let port = process.argv[2];
 if (!port) port = process.env['PORT'];
 if (!port) port = 8082;
