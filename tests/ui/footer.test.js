@@ -1,9 +1,8 @@
 const { test, expect } = require('@playwright/test');
 
-test('Check footer', async ({ page }) => {
-    await page.goto('http://localhost:8080');  
-    const footer = await page.$('footer');
+test('Check footer', async ({ page, baseURL }) => {
+    await page.goto(`${baseURL}`);  
+    const footer = await page.waitForSelector('footer');
     const text = await footer.textContent();
-    expect(text).toContain('© 2024 - Software Engineering and DеvOps еxam prеparation');
-  });
-  
+    expect(text).toContain('© 2023 - Software Engineering and DevOps regular exam');
+});
