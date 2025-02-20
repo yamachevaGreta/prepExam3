@@ -43,8 +43,7 @@ jobs:
 
   softUni:
     runs-on: ubuntu-latest
-    needs: build_and_test
-
+    
     steps:
     - name: Display SoftUni Username
       run: |

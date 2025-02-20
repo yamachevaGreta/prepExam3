@@ -21,3 +21,11 @@ jobs:
           service_id: ${{ secrets.MY_RENDER_DEPLOY_ID }}
           api_key: ${{ secrets.MY_RENDER_API_KEY }}
           wait_deploy: true
+
+  softUni:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Display SoftUni Username
+      run: |
+        echo "SoftUni Username: yamacheva"
