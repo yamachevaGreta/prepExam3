@@ -3,13 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-"scripts": {
-  "start": "node index.js",
-  "start:test": "PORT=8082 node index.js",
-  "test:unit": "mocha -u tdd 'tests/unit/*.js'",
-  "test:ui": "start-server-and-test start:test http://localhost:8082 'npx playwright test'",
-  "test": "npm run test:unit && npm run test:ui"
-},
+  "scripts": {
+    "test:unit": "mocha -u tdd 'tests/unit/*.js'",
+    "test:ui": "npx playwright test",
+    "start": "node index.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -21,6 +19,8 @@
   },
   "devDependencies": {
     "@playwright/test": "1.30",
-    "mocha": "^10.2.0"
+    "cross-env": "^7.0.3",
+    "mocha": "^10.2.0",
+    "start-server-and-test": "^2.0.10"
   }
 }
