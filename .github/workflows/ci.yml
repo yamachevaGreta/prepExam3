@@ -43,7 +43,7 @@ jobs:
         exit 1
 
     - name: Install Playwright Browsers
-      run: npx playwright install --with-deps > /dev/null || exit 1
+      run: npx playwright install --with-deps
 
     - name: Run Unit Tests
       run: npm run test:unit
