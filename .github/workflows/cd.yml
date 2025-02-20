@@ -21,6 +21,6 @@ jobs:
       - name: Deploy Backend to Render
         uses: JorgeLNJunior/render-deploy@v1.4.4
         with:
-          service_id: ${{ secrets.RENDER_BACKEND_ID }}
-          api_key: ${{ secrets.RENDER_API_KEY }}
+          service_id: ${{ secrets.MY_RENDER_DEPLOY_ID }}
+          api_key: ${{ secrets.MY_RENDER_API_KEY }}
           wait_deploy: true
