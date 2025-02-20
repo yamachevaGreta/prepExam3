@@ -34,8 +34,8 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Start the Backend
-      run: nohup npm run server &
+    - name: Start the App
+      run: npm start &
 
     - name: Install Playwright Browsers
       run: npx playwright install
