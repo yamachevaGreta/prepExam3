@@ -45,6 +45,10 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install
 
+    - name: Display SoftUni Username
+      run: |
+        echo "SoftUni Username: yamacheva"
+
     - name: Run Unit Tests
       run: npm run test:unit
 
