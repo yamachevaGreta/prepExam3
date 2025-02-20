@@ -2,10 +2,10 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ "junior-dev" ]
+    branches: [ "**" ]  # Matches all branches
   pull_request:
-    branches: [ "main" ]
-
+    branches: [ "**" ]  # Runs on PRs from any branch
+    
 env:
   NODE_VERSION: 20
 
